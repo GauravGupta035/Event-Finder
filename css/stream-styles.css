@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --primary-color: #ff0157;
+  --main-text-color: #333333;
+  --page-color: #F2F2F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.see-all {
+  color: var(--primary-color);
+}
+
+.primary-navbar {
+  background: #333545;
+  padding: 1em;
+}
+
+.primary-navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.primary-navbar .container .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1.8em;
+  margin-left: 1.3em;
+}
+
+.primary-navbar .container .logo span {
+  color: var(--primary-color);
+}
+
+.primary-navbar .container #search {
+  width: 60%;
+  padding: 1em;
+}
+
+.primary-navbar .container .nav {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.primary-navbar .container .nav li {
+  margin-right: 1.5em;
+}
+
+.primary-navbar .container .nav a {
+  color: white;
+}
+
+.primary-navbar .container li.sign-in-cta a {
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  font-weight: bold;
+  padding: 0.5em 0.8em;
+}
+
+.primary-navbar .container li.sign-in-cta a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.secondary-navbar {
+  background: #222539;
+}
+
+.secondary-navbar .events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.secondary-navbar .events a {
+  margin: 0 3.8em;
+  color: #b9b9b9;
+}
+
+.secondary-navbar .events a:hover {
+  color: white;
+}
+
+.secondary-navbar .events .current {
+  font-weight: bold;
+}
+
+.secondary-navbar .events .current a {
+  color: white;
+}
+
+.page {
+  background-color: var(--page-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page h2 {
+  color: var(--main-text-color);
+  font-weight: bold;
+}
+/*# sourceMappingURL=stream-styles.css.map */

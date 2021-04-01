@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #ff0157;
+    --main-text-color: #333333;
+    --page-color: #F2F2F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.see-all {
+    color: var(--primary-color);
+}
+
+.primary-navbar {
+    background: #333545;
+    padding: 1em;
+
+    .container {
+
+        display: flex;
+        place-content: space-between;
+
+        .logo {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-size: 1.8em;
+            margin-left: 1.3em;
+    
+            span {
+                color: var(--primary-color);
+            }
+        }
+
+        #search {
+            width: 60%;
+            padding: 1em;
+        }
+
+        .nav {
+            margin-top: 1em;
+            display: flex;
+
+            li {
+                margin-right: 1.5em;
+            }
+
+            a {
+                color: white;
+            }
+        }
+
+        li.sign-in-cta a {
+            color: var(--primary-color);
+            border: 3px solid var(--primary-color);
+            font-weight: bold;
+            padding: 0.5em 0.8em;
+
+            &:hover {
+                background-color: var(--primary-color);
+                color: white;
+            }
+        }
+    }
+}
+
+.secondary-navbar {
+    background: #222539;
+
+    .events {
+        display: flex;
+        padding: 0.2em;
+        justify-content: center;
+
+        a {
+            margin: 0 3.8em;
+            color: #b9b9b9;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        .current {
+            font-weight: bold;
+            
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+.page {
+    background-color: var(--page-color);
+    display: flex;
+
+    h2 {
+        color: var(--main-text-color);
+        font-weight: bold;
+    }
+}
