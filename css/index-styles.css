@@ -3,6 +3,8 @@
   --primary-color: #ff0157;
   --main-text-color: #5C5C5C;
   --page-color: #F2F2F2;
+  --primary-nav: #333545;
+  --secondary-nav: #222539;
 }
 
 * {
@@ -27,7 +29,7 @@ a.see-all {
 }
 
 .primary-navbar {
-  background: #333545;
+  background: var(--primary-nav);
   padding: 1em;
 }
 
@@ -83,7 +85,7 @@ a.see-all {
 }
 
 .secondary-navbar {
-  background: #222539;
+  background: var(--secondary-nav);
 }
 
 .secondary-navbar .events {
