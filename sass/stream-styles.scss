@@ -108,10 +108,42 @@ a.see-all {
 
 .page {
     background-color: var(--page-color);
-    display: flex;
+
+    .streams {
+        margin: 20px 20em;
+
+    }
 
     h2 {
         color: var(--main-text-color);
         font-weight: bold;
+    }
+
+    .container{
+        display: flex;
+
+        .card {
+            margin: 1em 1.5em;
+            border-radius: 10px;
+            width: 200px;
+            height: 350px;
+
+            img {
+                border-radius: 10px;
+            }
+
+            .details {
+                max-width: 200px;
+
+                h3 {
+                    color: black;
+                    font-weight: 500;
+                }
+
+                p {
+                    color: var(--main-text-color);
+                }
+            }
+        }
     }
 }

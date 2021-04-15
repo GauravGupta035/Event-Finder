@@ -115,13 +115,44 @@ a.see-all {
 
 .page {
   background-color: var(--page-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+.page .streams {
+  margin: 20px 20em;
 }
 
 .page h2 {
   color: var(--main-text-color);
   font-weight: bold;
+}
+
+.page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page .container .card {
+  margin: 1em 1.5em;
+  border-radius: 10px;
+  width: 200px;
+  height: 350px;
+}
+
+.page .container .card img {
+  border-radius: 10px;
+}
+
+.page .container .card .details {
+  max-width: 200px;
+}
+
+.page .container .card .details h3 {
+  color: black;
+  font-weight: 500;
+}
+
+.page .container .card .details p {
+  color: var(--main-text-color);
 }
 /*# sourceMappingURL=stream-styles.css.map */
