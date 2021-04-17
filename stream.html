@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Finder</title>
-    <link rel="stylesheet" href="./css/stream-styles.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="./css/stream-styles.css">
+</head>
+<body>
     <div class="primary-navbar">
       <div class="container">
         <a href="./index.html" class="logo">Event <span>Finder</span></a>
@@ -27,107 +27,137 @@
         </nav>
       </div>
     </div>
-
+  
     <div class="secondary-navbar">
       <nav>
         <ul class="events">
-          <li class="current">
-            <a href="./stream.html" class="online-streams">Online Streams</a>
-          </li>
+          <li class="current"><a href="./stream.html" class="online-streams">Online Streams</a></li>
           <li><a href="#" class="workshops">Workshops</a></li>
           <li><a href="#" class="comedy-shows">Comedy Shows</a></li>
         </ul>
       </nav>
     </div>
 
-    <div class="page">
-      <class class="streams">
-        <div class="top-picks">
-
-          <h2>Top Picks For You</h2>
-  
-          <div class="container">
-            <a href="#">
-              <div class="card">
-                <img
-                  src="images/god.jpg"
-                  alt="God"
-                  height="350px"
-                  width="200px"
-                />
-  
-                <div class="details">
-                  <h3>Yes God Yes</h3>
-                  <p>English</p>
-                </div>
-              </div>
-  
-              <a href="#">
-                <div class="card">
-                  <img
-                    src="images/abe.jpg"
-                    alt="abe"
-                    height="350px"
-                    width="200px"
-                  />
-                  
-                  <div class="details">
-                    <h3>Abe</h3>
-                    <p>English</p>
-                  </div>
-                </div>
-              </a>
-  
-              <a href="#">
-                <div class="card">
-                  <img
-                    src="images/mamma-mia.jpg"
-                    alt="abe"
-                    height="350px"
-                    width="200px"
-                  />
-  
-                  <div class="details">
-                    <h3>Mamma Mia! Here We Go Again</h3>
-                    <p>English</p>
-                  </div>
-                </div>
-              </a>
-  
-              <a href="#">
-                <div class="card">
-                  <img
-                    src="images/mib2.jpg"
-                    alt="abe"
-                    height="350px"
-                    width="200px"
-                  />
-  
-                  <div class="details">
-                    <h3>Men In Black 2</h3>
-                    <p>English</p>
-                  </div>
-                </div>
-              </a>
-  
-              <a href="#">
-                <div class="card">
-                  <img
-                    src="images/desert.jpg"
-                    alt="abe"
-                    height="350px"
-                    width="200px"
-                  />
-  
-                  <div class="details">
-                    <h3>It Came From The Desert</h3>
-                    <p>English</p>
-                  </div>
-                </div>
-              </a>
-            </a>
-          </div>
-        </div>
+    <div class="slideshow-container">           
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <div class="mySlides fade">
+        <img src="./images/online-streams/slideshow/ef7e5df6bd3ccb5c885cc6a1807d4364.jpg" alt="">
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/online-streams/slideshow/sumit-anand-live-14-04-2021-05-46-30-497.jpg" alt="">
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/online-streams/slideshow/share.jpg" alt="">
+      </div>
+      <div class="mySlides fade">
+        <img src="./images/online-streams/slideshow/sadhguru-live-with-chetan-bhagat--get-a-free-book-07-04-2021-04-24-11-530.jpg" alt="">
+      </div>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-  </body>
+
+    <div class="stream-container">
+      <p>Top Picks For You</p>
+      <a class="prev" onclick="streamScroll(1, 'l')">&#10094;</a>
+      <div class="stream" id="stream1">
+        <div class="stream-item">
+          <img src="images/online-streams/Top Picks For You/et00039742-zwradyxahs-portrait.jpg" alt="">
+          <p>99 Songs</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Top Picks For You/et00107707-rsjvwjzdnh-portrait.jpg" alt="">
+          <p>Yuvarathnaa</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Top Picks For You/et00122511-ptkrtmjxau-portrait.jpg" alt="">
+          <p>Godzilla vs. Kong</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Top Picks For You/et00128390-wkstrfzkrj-portrait.jpg" alt="">
+          <p>Vakeel Saab</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Top Picks For You/et00136763-wnkbqwguyj-portrait.jpg" alt="">
+          <p>Judas and the Black Messiah</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Top Picks For You/et00304964-msjktvkpcn-portrait.jpg" alt="">
+          <p>Rewind</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Top Picks For You/et00305671-vujhyphnak-portrait.jpg" alt="">
+          <p>Karnan</p>
+        </div>
+      </div>
+      <a class="next" onclick="streamScroll(1, 'r')">&#10095;</a>
+      <p>Premiers</p>
+      <a class="prev" onclick="streamScroll(2, 'l')">&#10094;</a>
+      <div class="stream" id="stream2">
+        <div class="stream-item">
+          <img src="images/online-streams/Premiers/et00047164-ndumsyxpnh-portrait.jpg" alt="">
+          <p>Justice League</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Premiers/et00077622-upsdhktnab-portrait.jpg" alt="">
+          <p>Wonder Woman 1984</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Premiers/et00121315-vkvlvxwebx-portrait.jpg" alt="">
+          <p>Tenet</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Premiers/et00145979-aemkycndfm-portrait.jpg" alt="">
+          <p>Heroic Losers</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Premiers/et00300988-xbwbbjfjzw-portrait.jpg" alt="">
+          <p>Tom &amp; Jerry</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Premiers/et00301892-gcdhfgcgdv-portrait.jpg" alt="">
+          <p>Monster Hunter</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Premiers/et00309248-eemkzxzpkf-portrait.jpg" alt="">
+          <p>The Power</p>
+        </div>
+      </div>
+      <a class="next" onclick="streamScroll(2, 'r')">&#10095;</a>
+      <p>Coming Soon</p>
+      <a class="prev" onclick="streamScroll(3, 'l')">&#10094;</a>
+      <div class="stream" id="stream3">
+        <div class="stream-item">
+          <img src="images/online-streams/Coming Soon/et00061877-fkkzblqvak-portrait.jpg" alt="">
+          <p>The Current War</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Coming Soon/et00302307-bnhefqlbvz-portrait.jpg" alt="">
+          <p>Last Moment Of Clarity</p>
+        </div>
+        <div class="stream-item">
+          <img src="images/online-streams/Coming Soon/et00309748-hknrmkecqz-portrait.jpg" alt="">
+          <p>Another Round</p>
+        </div>
+      </div>
+      <a class="next" onclick="streamScroll(3, 'r')">&#10095;</a>
+    </div>
+
+    <footer>
+      <div class="footer-logo">
+        <div class="line"></div>
+        <a href="./index.html" class="logo">Event <span>Finder</span></a>
+        <div class="line"></div>
+      </div>
+      <p class="copyright">
+        Copyright 2021 &copy; Lund Entertainment Pvt. Ltd. All Rights Reserved.
+        <br>
+        The content and images used on this site are copyright protected and copyrights vests with the respective owners. 
+        <br>
+        The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. 
+        <br>
+        Unauthorized use is prohibited and punishable by law.
+      </p>
+    </footer>
+
+    <script src="Javascript/stream-script.js"></script>
+</body>
 </html>
