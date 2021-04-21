@@ -8,40 +8,69 @@
     <link rel="stylesheet" href="./css/contact-styles.css">
 </head>
 <body>
-    <div class="primary-navbar">
-      <div class="container">
-        <a href="#" class="logo">Event <span>Finder</span></a>
-        <h1>Event Finder Support Center</h1>
-      </div>
+  <div class="primary-navbar">
+    <div class="container">
+      <a href="./index.html" class="logo">Event <span>Finder</span></a>
+
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Search for Events Near You"
+      />
+
+      <nav>
+        <ul class="nav">
+          <li class="sign-in-cta"><a href="#">Sign In</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
+  </div>
+
+  <div class="secondary-navbar">
+    <nav>
+      <ul class="events">
+        <li><a href="./stream.html" class="online-streams">Online Streams</a></li>
+        <li><a href="#" class="workshops">Workshops</a></li>
+        <li><a href="#" class="comedy-shows">Comedy Shows</a></li>
+      </ul>
+    </nav>
+  </div>
 
     <div class="page">
-      <h1>How can we help you today?</h1>
-      
+      <h3>GOT A QUESTION?</h3>
+      <h1>Contact Event Finder</h1>
+      <p>We're here to help and answer any question you might have. We look forward to hearing from you &#128522</p>
+
       <div class="contact-form">
+
         <form action="#">
-          <label for="came">Name</label>
+          <label for="fname">FIRST NAME<sup>*</sup></label>
+          <label for="lname"><span>LAST NAME</span><sup>*</sup></label>
           <br>
-          <input type="text" name="name" id="name">
-          <br>
-          <br>
-          <label for="contact">Contact Number</label>
-          <br>
-          <input type="text" name="contact" id="contact">
+          <input type="text" name="fname" id="fname">
+          <input type="text" name="lname" id="lname">
+  
           <br>
           <br>
-          <label for="email">E-mail</label>
+  
+          <label for="email">EMAIL<sup>*</sup></label>
           <br>
           <input type="text" name="email" id="email">
+  
           <br>
           <br>
-          <label for="issue">Issues/Suggestions</label>
+  
+          <label for="message">MESSAGE<sup>*</sup></label>
           <br>
-          <textarea name="issue" id="issue" cols="50" rows="10" placeholder="Leave a message to our team"></textarea>
+          <textarea name="message" id="message" cols="33" rows="4"></textarea>
+  
           <br>
           <br>
-          <div class="submit-form">
-            <a href="#">Submit</a>
+  
+          <div class="send-message">
+            <a href="#">Send Message</a>
           </div>
         </form>
       </div>

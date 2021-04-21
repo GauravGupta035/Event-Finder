@@ -37,6 +37,7 @@ a.see-all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  place-content: space-between;
 }
 
 .primary-navbar .container .logo {
@@ -51,60 +52,148 @@ a.see-all {
   color: var(--primary-color);
 }
 
-.primary-navbar .container h1 {
-  color: white;
-  margin-left: 2em;
+.primary-navbar .container #search {
+  width: 60%;
+  padding: 1em;
 }
 
-.page {
-  background-color: var(--page-color);
+.primary-navbar .container .nav {
+  margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.page h1 {
-  color: var(--main-text-color);
-  margin: 2em 4em;
+.primary-navbar .container .nav li {
+  margin-right: 1.5em;
 }
 
-.page .contact-form {
-  background-color: white;
-  width: 500px;
-  height: 650px;
-  margin: 0 5em;
-  margin-top: 10em;
-  margin-bottom: 5em;
-  border: 1px solid var(--primary-color);
+.primary-navbar .container .nav a {
+  color: white;
 }
 
-.page .contact-form form {
-  margin: 40px 80px;
-}
-
-.page .contact-form form input {
-  caret-color: var(--primary-color);
-}
-
-.page .contact-form form input[type="text"] {
-  width: 320px;
-  padding: .5em;
-}
-
-.page .contact-form form textarea {
-  padding: 0.5em;
-  caret-color: var(--primary-color);
-}
-
-.page .contact-form form .submit-form a {
+.primary-navbar .container li.sign-in-cta a {
   color: var(--primary-color);
   border: 3px solid var(--primary-color);
   font-weight: bold;
   padding: 0.5em 0.8em;
 }
 
-.page .contact-form form .submit-form a:hover {
+.primary-navbar .container li.sign-in-cta a:hover {
   background-color: var(--primary-color);
+  color: white;
+}
+
+.secondary-navbar {
+  background: var(--secondary-nav);
+}
+
+.secondary-navbar .events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.secondary-navbar .events a {
+  margin: 0 3.8em;
+  color: #b9b9b9;
+}
+
+.secondary-navbar .events a:hover {
+  color: white;
+}
+
+.page h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em;
+  font-weight: 300;
+  color: var(--primary-color);
+}
+
+.page h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 310px;
+  height: 75px;
+  text-align: center;
+}
+
+.page .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 360px;
+  height: 450px;
+  padding-top: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em auto;
+  -webkit-box-shadow: 8px 8px 18px #b9b9b9;
+          box-shadow: 8px 8px 18px #b9b9b9;
+}
+
+.page .contact-form span {
+  margin-left: 1em;
+}
+
+.page .contact-form sup {
+  color: red;
+}
+
+.page .contact-form input[type=text] {
+  height: 3em;
+  width: 110px;
+  border: 1px solid #bebfcc;
+}
+
+.page .contact-form textarea {
+  border: 1px solid #bebfcc;
+}
+
+.page .contact-form input[type=text]:focus, .page .contact-form textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+  caret-color: var(--primary-color);
+}
+
+.page .contact-form #email {
+  width: 220px;
+}
+
+.page .contact-form .send-message {
+  background-color: var(--primary-color);
+  padding: 0.8em;
+  cursor: pointer;
+  text-align: center;
+}
+
+.page .contact-form .send-message a {
   color: white;
 }
 /*# sourceMappingURL=contact-styles.css.map */
