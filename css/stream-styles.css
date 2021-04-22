@@ -94,6 +94,10 @@ a.see-all {
   color: var(--logo-primary);
 }
 
+.primary-navbar .container li.contact-cta a:hover {
+  border-bottom: 2px solid white;
+}
+
 .secondary-navbar {
   background: var(--secondary-nav);
 }
