@@ -1,5 +1,6 @@
-var slideIndex = 0;
-var timer = setTimeout(showSlidesAuto, 0);
+var slideIndex = -1, timer;
+
+showSlidesAuto();
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -19,21 +20,21 @@ function showSlides(n) {
   slides[slideIndex].style.display = "block"; 
   
   clearTimeout(timer);
-  timer = setTimeout(showSlidesAuto, 0);
+  slideIndex--;
+  showSlidesAuto();
 }
 
 function showSlidesAuto() {
   var i;
   var slides = document.getElementsByClassName("slides");
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-
+  slideIndex++;
   if (slideIndex >= slides.length)
-    slideIndex = 0;  
-  slides[slideIndex].style.display = "block";   
-  slideIndex++; 
+    slideIndex = 0;
+
+  for (i = 0; i < slides.length; i++)
+    slides[i].style.display = "none";   
+  slides[slideIndex].style.display = "block";
 
   timer = setTimeout(showSlidesAuto, 2000);
 }
