@@ -84,6 +84,10 @@ a.see-all {
   color: white;
 }
 
+.primary-navbar .container li.contact-cta a:hover {
+  border-bottom: 2px solid white;
+}
+
 .secondary-navbar {
   background: var(--secondary-nav);
 }
@@ -104,6 +108,14 @@ a.see-all {
 }
 
 .secondary-navbar .events a:hover {
+  color: white;
+}
+
+.secondary-navbar .events .current {
+  font-weight: bold;
+}
+
+.secondary-navbar .events .current a {
   color: white;
 }
 
@@ -171,7 +183,8 @@ a.see-all {
 }
 
 .page {
-  background-color:#05386B;
+  background-color:var(--primary-nav);
+  display: flex;
 }
 
 .page .recommendations {
@@ -216,11 +229,10 @@ a.see-all {
 }
 
 .page .recommendations .container .details h3 {
-  color: yellow;
+  color: white;
   font-weight: 500;
 }
 
 .page .recommendations .container .details p {
-  color: red;
+  color: var(--primary-color);
 }
-/*# sourceMappingURL=index-styles.css.map */

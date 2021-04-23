@@ -107,6 +107,18 @@ a.see-all {
   color: white;
 }
 
+.primary-navbar .container li.contact-cta a:hover {
+  border-bottom: 2px solid white;
+}
+
+.secondary-navbar .events .current {
+  font-weight: bold;
+}
+
+.secondary-navbar .events .current a {
+  color: white;
+}
+
 .hero {
   max-width: 100%;
   margin: auto;
@@ -171,7 +183,8 @@ a.see-all {
 }
 
 .page {
-  background-color: black;
+  background-color: var(--page-color);
+  display: flex;
 }
 
 .page .recommendations {
@@ -179,7 +192,7 @@ a.see-all {
 }
 
 .page .recommendations h2 {
-  color:red;
+  color:var(--primary-color);
   margin-top: 2.3em;
 }
 
@@ -216,11 +229,10 @@ a.see-all {
 }
 
 .page .recommendations .container .details h3 {
-  color: white;
+  color: black;
   font-weight: 500;
 }
 
 .page .recommendations .container .details p {
-  color: pink;
+  color: var(--main-text-color);
 }
-/*# sourceMappingURL=index-styles.css.map */
