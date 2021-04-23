@@ -134,31 +134,27 @@ a.see-all {
   display: flex;
   justify-content: space-between;
   padding-top: 3rem;
-  overflow: scroll;
+  overflow-x: scroll;
 }
-.mySlides {
+.slides {
   display: none;
   cursor: pointer;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
 }
-.mySlides > img{
+.slides > img {
   height: 30rem;
   width: 70rem;
-  /* box-shadow: -1rem 1rem var(--logo-secondary); 
-  margin-left: 1rem;  */
   border-radius: 1rem;
 }
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 0} 
   to {opacity: 1}
 }
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 0} 
   to {opacity: 1}
 }
 .slideshow-container > .prev, .slideshow-container > .next {
@@ -183,18 +179,19 @@ a.see-all {
   background: var(--secondary-nav);
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, 5rem 20rem);
+  grid-template-rows: repeat(6, auto);
   padding: 2rem 3rem;
 }
 .stream-container > p {
   color: var(--font-color-1);
-  grid-column: 2 / span 3;
+  grid-column: 2;
   font-weight: bold;
   font-size: 3rem;
   padding: 1rem;
 }
 .stream-container > .prev, .stream-container > .next {
   cursor: pointer;
+  grid-column: 1;
   color: var(--logo-primary);
   font-size: 2rem;
   transition: 1s;
@@ -202,10 +199,12 @@ a.see-all {
   margin: 7rem 0;
   padding: 1.5rem;
 }
+.stream-container > .next {
+  grid-column: 3;
+}
 .stream-container .prev:hover, .stream-container .next:hover {
   background-color: var(--logo-secondary);
 }
-
 .stream {
   grid-column: 2;
   display: flex;
@@ -213,14 +212,12 @@ a.see-all {
   scroll-behavior: smooth;
   padding: 1rem;
 }
-
 .stream-item {
   padding-right: 1rem;
 }
 .stream-item > img {
   height: 15rem;
   width: 15rem;
-  transition: height 1s;
   border-radius: 1rem;
 }
 .stream-item > img:hover {
@@ -236,16 +233,10 @@ footer {
   display: flex;
   flex-direction: column;
 }
-footer > .copyright {
-  padding: 1rem;
-  color: var(--font-color-1);
-  text-align: center;
-}
-
 .footer-logo {
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 .footer-logo > .line {
   background: var(--font-color-1);
@@ -256,4 +247,9 @@ footer > .copyright {
 }
 .footer-logo > .logo {
   margin: 0 1rem;
+}
+footer > .copyright {
+  padding: 1rem;
+  color: var(--font-color-1);
+  text-align: center;
 }
