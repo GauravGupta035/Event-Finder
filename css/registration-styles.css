@@ -1,0 +1,113 @@
+:root {
+  --pop-up-container-color: rgb(0, 0, 0, 0.5);
+  --sign-in-primary: white;
+  --sign-in-secondary: gray;
+  --sign-in-tertiary: #ff0157;
+}
+
+a {
+  cursor: pointer;
+}
+
+.pop-up-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--pop-up-container-color);
+    display: none;
+  }
+  
+  .pop-up {
+    position: sticky;
+    margin: auto;
+    background-color: var(--sign-in-primary);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+  }
+  @keyframes slide-in {
+    from {
+      transform: translateY(-2rem);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .pop-up > header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pop-up > header > .close{
+    cursor: pointer;
+    grid-column: 3;
+    grid-row: 1;
+    background-color: var(--sign-in-primary);
+    border: 0;
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+    color: var(--sign-in-secondary);
+  }
+  .pop-up > header > .close:hover {
+    color: black;
+  }
+  .pop-up > header > .tab {
+    cursor: pointer;
+    background-color: var(--sign-in-primary);
+    border: 0;
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+    color: var(--sign-in-secondary);
+  }
+  .pop-up > header > .tab:hover {
+    color: var(--sign-in-tertiary) !important;
+  }
+  .pop-up > form {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1rem 2rem;
+  }
+  .pop-up > form > label {
+    grid-column: 1;
+    text-align: justify;
+    padding: 1rem;
+  }
+  .pop-up > form > input {
+    grid-column: 2;
+    margin: 1rem;
+    border: none;
+    border-bottom: 2px solid var(--sign-in-secondary);
+  }
+  .pop-up > form > input:focus {
+    outline: none;
+  }
+  .pop-up > form > input[type="submit"] {
+    grid-column: span 2;
+    border: none;
+    font-size: 1.5rem;
+    background-color: var(--sign-in-primary);
+    color: var(--sign-in-secondary);
+    cursor: pointer;
+    margin: 1rem 7rem;
+    padding: 1rem;
+  }
+  .pop-up > form > input[type="submit"]:hover {
+    background-color: var(--sign-in-tertiary);
+    color: var(--sign-in-primary);
+  }
+  .pop-up > form > #form-notification{
+    grid-column: span 2;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  #sign-in {
+    display: grid;
+  }
+  #sign-up {
+    display: none;
+  }

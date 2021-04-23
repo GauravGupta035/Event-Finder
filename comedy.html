@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comedy Show</title>
     <link rel="stylesheet" href="css/comedy-styles.css" />
+    <link rel="stylesheet" href="css/registration-styles.css" />
   </head>
   <body>
 
@@ -22,7 +23,7 @@
   
           <nav>
             <ul class="nav">
-              <li class="sign-in-cta"><a href="#">Sign In</a></li>
+              <li class="sign-in-cta"><a onclick="popUp()">Sign In</a></li>
               <li class="contact-cta"><a href="./contact.html">Contact Us</a></li>
             </ul>
           </nav>
@@ -306,6 +307,34 @@
 </div>
 </div>
 
+<div class="pop-up-container">
+    <div class="pop-up">
+      <header>
+        <button id="sign-in-tab" class="tab" onclick="switchTab(0)">Sign-in</button>
+        <button id="sign-up-tab" class="tab" onclick="switchTab(1)">Sign-up</button>
+        <button class="close" onclick="closePopUp()">&#10006;</button>
+      </header>
+      <form id="sign-in">
+        <label for="sign-in-email">E-mail</label>
+        <input type="email" id="sign-in-email" name="sign-in-email" placeholder="Enter E-mail" required><br>
+        <label for="sign-in-password">Password</label>
+        <input type="password" id="sign-in-password" name="sign-in-password" placeholder="Enter Password" required><br>
+        <input type="submit" value="Sign In">
+      </form>
+      <form id="sign-up" onsubmit="return checkPwd()">
+        <label for="sign-up-email">E-mail</label>
+        <input type="email" id="sign-up-email" name="sign-up-email" placeholder="Enter E-mail" required><br>
+        <label for="sign-up-password">Password</label>
+        <input type="password" id="sign-up-password" name="sign-up-password" placeholder="Enter Password" required><br>
+        <label for="sign-up-re-password">Confirm Password</label>
+        <input type="password" id="sign-up-re-password" name="sign-up-re-password" placeholder="Re-enter Password" required><br>
+        <p id="form-notification"></p>
+        <input type="submit" value="Sign Up">
+      </form>
+    </div>
+</div>
+
 <script src="./Javascript/index-script.js"></script>
+<script src="./Javascript/registration-script.js"></script>
 </body>
 </html>
