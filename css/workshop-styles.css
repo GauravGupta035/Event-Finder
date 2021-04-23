@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --primary-color: #ff0157;
+  --main-text-color: #5C5C5C;
+  --page-color: #F2F2F2;
+  --primary-nav: #333545;
+  --secondary-nav: #222539;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.see-all {
+  color: var(--primary-color);
+}
+
+.primary-navbar {
+  background: var(--primary-nav);
+  padding: 1em;
+}
+
+.primary-navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.primary-navbar .container .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1.8em;
+  margin-left: 1.3em;
+}
+
+.primary-navbar .container .logo span {
+  color: var(--primary-color);
+}
+
+.primary-navbar .container #search {
+  width: 60%;
+  padding: 1em;
+}
+
+.primary-navbar .container .nav {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.primary-navbar .container .nav li {
+  margin-right: 1.5em;
+}
+
+.primary-navbar .container .nav a {
+  color: white;
+}
+
+.primary-navbar .container li.sign-in-cta a {
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  font-weight: bold;
+  padding: 0.5em 0.8em;
+}
+
+.primary-navbar .container li.sign-in-cta a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.secondary-navbar {
+  background: var(--secondary-nav);
+}
+
+.secondary-navbar .events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.secondary-navbar .events a {
+  margin: 0 3.8em;
+  color: #b9b9b9;
+}
+
+.secondary-navbar .events a:hover {
+  color: white;
+}
+
+.hero {
+  max-width: 100%;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.hero .btn {
+  position: absolute;
+  top: 40%;
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: rgba(95, 106, 117, 0.3);
+  z-index: 1;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  background-color: rgba(95, 106, 117, 0.5);
+  cursor: pointer;
+}
+
+.hero .btn.next {
+  right: 25px;
+  font-size: 1.3em;
+}
+
+.hero .btn.prev {
+  left: 25px;
+  font-size: 1.3em;
+}
+
+.hero .scroller {
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+.hero .scroller .item {
+  min-width: 100%;
+  min-height: 200px;
+  background-color: #EDF2F7;
+  scroll-snap-align: center;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.hero .scroller .item img {
+  background-color: #edf2f7;
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.page {
+  background-color:#05386B;
+}
+
+.page .recommendations {
+  margin: 30px 20em;
+}
+
+.page .recommendations h2 {
+  color:white;
+  margin-top: 2.3em;
+}
+
+.page .recommendations nav {
+  margin-top: 3.8em;
+  margin-right: 1.5em;
+  float: right;
+}
+
+.page .recommendations nav a:hover {
+  text-decoration: underline;
+}
+
+.page .recommendations .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page .recommendations .container .card {
+  margin: 1em 1.5em;
+  border-radius: 10px;
+  width: 200px;
+  height: 350px;
+}
+
+.page .recommendations .container .card img {
+  border-radius: 10px;
+}
+
+.page .recommendations .container .details {
+  margin-left: 2em;
+  max-width: 200px;
+}
+
+.page .recommendations .container .details h3 {
+  color: yellow;
+  font-weight: 500;
+}
+
+.page .recommendations .container .details p {
+  color: red;
+}
+/*# sourceMappingURL=index-styles.css.map */
