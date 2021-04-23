@@ -26,8 +26,20 @@ a {
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
+    -webkit-animation-name: slide-in;
+    -webkit-animation-duration: 0.5s;
     animation-name: slide-in;
     animation-duration: 0.5s;
+  }
+  @-webkit-keyframes slide-in {
+    from {
+      transform: translateY(-2rem);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
   @keyframes slide-in {
     from {
